@@ -13,12 +13,29 @@
                 7. If the player's last play was a number (not a letter), the player's score is multiplied by that amount.
         */
         //Player One
-        var score = 193;
-        var last_play = "Q";
-        var broom = "handle";
-        var has_ball = false;
+        // var score = 193;
+        // var last_play = "Q";
+        // var broom = "handle";
+        // var has_ball = false;
+        // var is_in_tree = false;
+        // var crying = false;
+
+        
+        // //Player Two
+        // var score = 394;
+        // var last_play = "W";
+        // var broom = "none";
+        // var has_ball = true;
+        // var is_in_tree = true;
+        // var crying = false;
+        
+        //Player Three
+        var score = "f";
+        var last_play = 1.5;
+        var broom = "brush";
+        var has_ball = true;
         var is_in_tree = false;
-        var crying = false;
+        var crying = true;
 
         if (typeof score != 'number'){
             score = 500;
@@ -36,12 +53,12 @@
         }
         if (broom === 'handle'){
             score *= 2
-        } elseif (broom === 'brush'){
+        } else if (broom === 'brush'){
             score *= 3
         } else {
             score *= .5
         }
-        if ((has_ball === true) && (is_in_tree === false) && (crying === false){
+        if ((has_ball === true) && (is_in_tree === false) && (crying === false)){
             score *= 1.5
         } 
         if (last_play === 'number'){
